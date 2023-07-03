@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Calculadora</title>
+    </head>
+    <body>
+        <div class="container">
+            
+            <div class="botao">
+                <div id="visor" class="visor"></div>
+                <li>
+                    
+                    <button id="zerar" onclick="zerar()">C</button>
+                    <button id="sinal" onclick="operador('+')">+</button>
+                    <button onclick="operador('-')">-</button>
+                </li>
+
+                <li>
+
+                    <button id="numero" onclick="number('7')">7</button>
+                    <button id="numero" onclick="number('8')">8</button>
+                    <button id="numero" onclick="number('9')">9</button>
+                    <button onclick="operador('*')">x</button>
+                </li>
+
+                <li>
+
+                    <button id="numero" onclick="number('4')">4</button>
+                    <button id="numero" onclick="number('5')">5</button>
+                    <button id="numero" onclick="number('6')">6</button>
+                    <button onclick="operador('/')">/</button>
+                </li>
+
+                <li>
+                    <button onclick="number('1')">1</button>
+                    <button id="numero" onclick="number('2')">2</button>
+                    <button id="numero" onclick="number('3')">3</button>
+                    <button onclick="number('.')" class="ponto">.</button>
+                </li>
+                <li>
+                    
+                    <button id="numero" class="zero" onclick="number('0')">0</button>
+                    <button onclick="operador()" class="igual">=</button>
+                </li>
+            
+            </div>
+        </div>
+        
+
+        <script src="js/index.js"></script>
+    </body>
+</html>
